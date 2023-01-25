@@ -1,12 +1,16 @@
 import React from 'react'
 import './Hero.scss'
+import MainLogo from '../../assets/img/LOGO-FINAL.png'
+import ArrowDown from "../ArrowDown/ArrowDown"
 
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
         <div className="hero__logo">
-            hero
-            </div>
+          <img className='hero__img' src={MainLogo} alt="Logo du Hero" />
+          <h1 className="hero__title centaur">OMEGA 2.0</h1>
+        </div>
+        <ArrowDown />
     </div>
   )
 }
