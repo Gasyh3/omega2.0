@@ -10,6 +10,12 @@
     src: url("./assets/fonts/Goudy\ Old\ Style\ Regular.ttf");
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .centaur {
     font-family: 'Centaur';
 }
@@ -21,6 +27,7 @@
 .lato {
     font-family: 'Lato';
 }
+
 
 h1 {
     font-size: 32pt;
@@ -47,5 +54,5 @@ ul {
 }
 
 .content {
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
