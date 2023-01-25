@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className="content">
       <Hero />
       <About />
       <Contact />
@@ -20,6 +21,7 @@ function App() {
       <Portfolio />
       <Blog />
       <Footer />
+      </div>
     </div>
   )
 }

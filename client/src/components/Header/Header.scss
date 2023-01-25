@@ -1,1 +1,113 @@
 @import "../../main.scss";
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+
+    &__logo {
+        width: 100px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        padding: 0 0.8rem;
+    }
+
+    &__burger {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        
+        &__links {
+            background: black;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            right: -100vw;
+            bottom: 0;
+            height: 100vh;
+            padding: 2rem;
+            visibility: hidden;
+        }
+        &__link {
+            display: block;
+            padding: 1.5rem;
+            font-size: 5vw;
+            color: white;
+        }
+
+        &__burger {
+            display: block;
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .burger-bar,
+    .burger-bar::before,
+    .burger-bar::after {
+        display: block;
+        width: 40px;
+        height: 4px;
+        position: relative;
+        border-radius: 5px;
+        background: black;
+    }
+
+    .show .nav__links {
+        width: 90vw;
+        right: 0;
+        visibility: visible;
+    }
+    .burger-bar::before,
+    .burger-bar::after {
+        content: "";
+        position: absolute;
+        left: 0;
+
+    }
+    .burger-bar::before {
+       transform: translateY(-12px);
+    }
+
+    .burger-bar::after {
+        transform: translateY(12px);
+    }
+
+    .white {
+        background: white;
+    }
+
+    .black {
+        background: black;
+    }
+
+}
