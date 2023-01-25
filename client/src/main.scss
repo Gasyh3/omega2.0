@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');
+
+@font-face {
+    font-family: 'Centaur';
+    src: url("./assets/fonts/Centaur-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Goudy';
+    src: url("./assets/fonts/Goudy\ Old\ Style\ Regular.ttf");
+}
+
+.centaur {
+    font-family: 'Centaur';
+}
+
+.goudy {
+    font-family: 'Goudy';
+}
+
+.lato {
+    font-family: 'Lato';
+}
+
+h1 {
+    font-size: 32pt;
+}
+h2 {
+    font-size: 26pt;
+}
+h3 {
+    font-size: 22pt;
+}
+h4 {
+    font-size: 20pt;
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 .App {
     display: flex;
     flex-direction: column;

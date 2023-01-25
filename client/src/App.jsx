@@ -6,10 +6,10 @@ import Contact from './components/Contact/Contact'
 import Prestations from './components/Prestations/Prestations'
 import Portfolio from './components/Portfolio/Portfolio'
 import Blog from './components/Blog/Blog'
+import Footer from './components/Footer/Footer'
 import './main.scss'
 
 function App() {
-
   return (
     <div className="App">
       <Header />
@@ -19,6 +19,7 @@ function App() {
       <Prestations />
       <Portfolio />
       <Blog />
+      <Footer />
     </div>
   )
 }
