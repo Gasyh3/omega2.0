@@ -24,6 +24,7 @@
 
     &__img {
         width: 15%;
+        height: 15%;
         border-radius: 50%;
         margin-right: 15%;
     }
@@ -68,6 +69,45 @@
     background-color: transparent;
 }
 
+@media screen and (max-width: 991px) {
+    .about {
+        &__first {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__img {
+            margin-right: 0;
+            width: 25%;
+        }
+
+        &__article {
+            margin-left: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__title {
+            padding: 10px;
+        }
+
+        &__text {
+            padding: 20px;
+            width: 80vw;
+            font-size: 1.5rem;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+
+        &__inmodal {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+}
 
 @media screen and (max-width: 767px) {
     .about {
@@ -92,7 +132,8 @@
         }
 
         &__text {
-            padding: 20px;
+            padding: 2%;
+            width: 80vw;
         }
 
         &__btn {
