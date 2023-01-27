@@ -1,1 +1,22 @@
 @import "../../main.scss";
+
+.contact {
+    height: 100vh;
+    border: 1px solid red;
+
+    &__reseaux {
+        width: 100vw;
+        border: 1px solid black;
+    }
+
+    &__form {
+        width: 100vw;
+        border: 1px solid green;
+    }
+
+    &__icon {
+        width: 50px;
+        fill: red;
+        stroke: blue;
+    }
+}

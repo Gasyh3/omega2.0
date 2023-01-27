@@ -1,0 +1,43 @@
+.icon {
+    width: 8vw;
+
+}
+.tiktok {
+    &:hover {
+        fill: #220177;
+    }
+}
+
+.facebook {
+    &:hover {
+        fill: #3b5998;
+    }
+}
+
+.instagram {
+    &:hover {
+        fill: #e4405f;
+    }
+}
+
+.whatsapp {
+    &:hover {
+        fill: #25d366;
+    }
+}
+
+.youtube {
+    &__path {
+        fill: #fff;
+    }
+
+    &__path-3 {
+
+        &:hover {
+            fill: #ff0000;
+        }
+    }
+    &:hover {
+        fill: #ff0000;
+    }
+}
