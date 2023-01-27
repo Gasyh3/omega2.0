@@ -1,1 +1,149 @@
 @import "../../main.scss";
+
+.about {
+    height: 100vh;
+
+
+    &__first {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__btn {
+        border: none;
+        cursor: pointer;
+        font-size: 1.35rem;
+        background-color: transparent;
+        margin-top: 2%;
+
+        &:hover {
+            color: blue;
+        }
+    }
+
+    &__img {
+        width: 15%;
+        height: 15%;
+        border-radius: 50%;
+        margin-right: 15%;
+    }
+
+    &__article {
+        margin-left: 10%;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;;
+    }
+
+    &__text {
+        text-align: justify;
+        font-size: 1.25rem;
+    }
+
+    &__inmodal {
+        display: flex;
+
+    }
+
+
+
+}
+
+.left-none {
+    margin-left: 0;
+}
+
+.btn-close {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 10%;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 991px) {
+    .about {
+        &__first {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__img {
+            margin-right: 0;
+            width: 25%;
+        }
+
+        &__article {
+            margin-left: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__title {
+            padding: 10px;
+        }
+
+        &__text {
+            padding: 20px;
+            width: 80vw;
+            font-size: 1.5rem;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+
+        &__inmodal {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        &__first {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__img {
+            margin-right: 0;
+            width: 40%;
+        }
+
+        &__article {
+            margin-left: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__title {
+            padding: 10px;
+        }
+
+        &__text {
+            padding: 2%;
+            width: 80vw;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+
+        &__inmodal {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+}
