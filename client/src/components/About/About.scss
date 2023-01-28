@@ -1,7 +1,7 @@
 @import "../../main.scss";
 
 .about {
-    height: 100vh;
+    height: 60vh;
 
 
     &__first {
@@ -71,6 +71,8 @@
 
 @media screen and (max-width: 991px) {
     .about {
+
+        height: 100vh;
         &__first {
             flex-direction: column-reverse;
             align-items: center;
@@ -147,3 +149,5 @@
 
     }
 }
+
+
