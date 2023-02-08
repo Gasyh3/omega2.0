@@ -5,6 +5,7 @@ import TikTokLogo from "../Logo/TikTok"
 import InstaLogo from "../Logo/Instagram"
 import WhatLogo from "../Logo/Whatsapp"
 import Youtube from '../Logo/Youtube'
+import FormContact from '../FormContact/FormContact'
 
 function Contact() {
   return (
@@ -28,7 +29,7 @@ function Contact() {
         
         </section>
         <section className="contact__form">
-          Form
+          <FormContact />
         </section>
     </div>
   )
