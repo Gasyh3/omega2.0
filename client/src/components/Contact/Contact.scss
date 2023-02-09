@@ -1,1 +1,27 @@
 @import "../../main.scss";
+
+.contact {
+    height: 100vh;
+
+    &__reseaux {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    &__link {
+        padding: 2%;
+    }
+
+    &__form {
+        width: 100vw;
+    }
+
+    &__icon {
+        width: 50px;
+        fill: red;
+        stroke: blue;
+    }
+}

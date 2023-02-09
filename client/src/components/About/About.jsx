@@ -3,7 +3,7 @@ import './About.scss'
 import ProfilePicture from '../../assets/img/picture-profile.png'
 import Modal from 'react-modal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRectangleXmark } from '@fortawesome/free-solid-svg-icons'
+import { faRectangleXmark, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const customStyles = {
   content: {
@@ -46,7 +46,10 @@ function About() {
              Faisant preuve de patience, de douceur, de bienveillance et d'attention, j'aime, le temps des préparatifs, devenir votre confidente afin de vous proposer une prestation idoine et combler le moindre de vos désirs.
           </p>
           <section className="about__second">
-        <button className='about__btn goudy' onClick={openModal}>En savoir plus ...</button>
+        <button className='about__btn goudy' onClick={openModal}>
+          <FontAwesomeIcon icon={faArrowRight} size="1x" />
+          {` `}
+           En savoir plus ...</button>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
