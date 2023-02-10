@@ -1,0 +1,16 @@
+{
+  "name": "omega2",
+  "version": "1.0.0",
+  "description": "serveur du site omega2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Kevin Rakotoniaina",
+  "license": "OS",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
