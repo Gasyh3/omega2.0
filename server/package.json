@@ -1,23 +1,8 @@
 {
-<<<<<<< HEAD
-  "name": "omega2",
-  "version": "1.0.0",
-  "description": "serveur du site omega2",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
-  },
-  "author": "Kevin Rakotoniaina",
-  "license": "OS",
-  "dependencies": {
-    "express": "^4.18.2",
-    "nodemon": "^2.0.20"
-=======
   "name": "omega-backend",
   "version": "1.0.0",
   "description": "Omega backend",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server"
@@ -36,6 +21,5 @@
     "node": "^20.1.0",
     "nodemon": "^2.0.22",
     "sequelize": "^6.31.1"
->>>>>>> 2982f84 (Init backend with server.js)
   }
 }
