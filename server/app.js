@@ -18,7 +18,8 @@ app.use(
   })
 );
 app.use("/images", express.static(path.join(__dirname, "images")));
-
 app.use("/api/user", userRoute);
+
+database.sync().then(() => console.log("database is ready to sync"));
 
 module.exports = app;
