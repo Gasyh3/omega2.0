@@ -8,6 +8,7 @@ const app = express();
 
 const database = require("./config/database");
 const userRoute = require("./routes/user-route");
+const categoryRoute = require("./routes/category-route");
 
 app.use(cors());
 app.use(express.json());
@@ -19,6 +20,7 @@ app.use(
 );
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/api/user", userRoute);
+app.use("/api/category", categoryRoute);
 
 database.sync().then(() => console.log("database is ready to sync"));
 
