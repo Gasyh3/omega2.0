@@ -4,9 +4,9 @@ const authMiddleware = require("../middlewares/auth-middleware");
 
 const router = express.Router();
 
-router.post("/", workController.createWork);
-router.put("/:id", workController.updateWork);
-router.delete("/:id", workController.deleteWork);
+router.post("/", authMiddleware, workController.createWork);
+router.put("/:id", authMiddleware, workController.updateWork);
+router.delete("/:id", authMiddleware, workController.deleteWork);
 router.get("/", workController.getAllWorks);
 router.get("/:id", workController.getWorkById);
 router.get("/category/:categoryId/works", workController.getWorksByCategory);

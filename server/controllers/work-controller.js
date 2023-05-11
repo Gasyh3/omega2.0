@@ -3,9 +3,11 @@ const Work = require("../models/work-model");
 // Function to create a new work
 exports.createWork = async (req, res) => {
   try {
-    const { workName, workDescription, workPrice, categoryId } = req.body;
+    const { workName, prestation, workDescription, workPrice, categoryId } =
+      req.body;
     const work = await Work.create({
       workName,
+      prestation,
       workDescription,
       workPrice,
       categoryId,
@@ -19,10 +21,11 @@ exports.createWork = async (req, res) => {
 // Function to update a work
 exports.updateWork = async (req, res) => {
   try {
-    const { workName, workDescription, workPrice, categoryId } = req.body;
+    const { workName, prestation, workDescription, workPrice, categoryId } =
+      req.body;
     const { id } = req.params;
     const work = await Work.update(
-      { workName, workDescription, workPrice, categoryId },
+      { workName, prestation, workDescription, workPrice, categoryId },
       { where: { id } }
     );
     res.status(200).json({ message: "Work updated successfully", work });

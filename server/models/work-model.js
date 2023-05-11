@@ -8,6 +8,10 @@ const Work = sequelize.define("work", {
     allowNull: false,
     primaryKey: true,
   },
+  prestation: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
   workName: {
     type: Sequelize.STRING,
     allowNull: false,
