@@ -1,6 +1,7 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../config/database");
 const Work = require("./work-model");
+const Marque = require("./marque-model");
 
 const Category = sequelize.define("category", {
   id: {
@@ -22,5 +23,7 @@ const Category = sequelize.define("category", {
 
 Category.hasMany(Work, { foreignKey: "categoryId", as: "works" });
 Work.belongsTo(Category, { foreignKey: "categoryId", as: "category" });
+Category.hasMany(Marque, { foreignKey: "categoryId", as: "marque" });
+Marque.belongsTo(Category, { foreignKey: "categoryId", as: "category" });
 
 module.exports = Category;
