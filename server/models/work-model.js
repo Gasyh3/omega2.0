@@ -1,26 +1,26 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../config/database");
-const Work = require("./work-model");
 
-const Category = sequelize.define("category", {
+const Work = sequelize.define("work", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
     allowNull: false,
     primaryKey: true,
   },
-  categoryName: {
+  workName: {
     type: Sequelize.STRING,
     allowNull: false,
     unique: true,
   },
-  categoryImg: {
+  workDescription: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  workPrice: {
     type: Sequelize.STRING,
     allowNull: false,
   },
 });
 
-Category.hasMany(Work, { foreignKey: "categoryId", as: "works" });
-Work.belongsTo(Category, { foreignKey: "categoryId", as: "category" });
-
-module.exports = Category;
+module.exports = Work;
