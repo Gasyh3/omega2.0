@@ -4,9 +4,9 @@ const authMiddleware = require("../middlewares/auth-middleware");
 
 const router = express.Router();
 
-router.post("/", marqueController.createMarque);
-router.put("/:id", marqueController.updateMarque);
-router.delete("/:id", marqueController.deleteMarque);
+router.post("/", authMiddleware, marqueController.createMarque);
+router.put("/:id", authMiddleware, marqueController.updateMarque);
+router.delete("/:id", authMiddleware, marqueController.deleteMarque);
 router.get("/", marqueController.getAllMarques);
 router.get("/category/:categoryId", marqueController.getMarquesByCategory);
 
