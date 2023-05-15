@@ -48,7 +48,7 @@ function FormContact() {
                     <textarea className="form__area goudy" placeholder="Votre message..." id="message" required></textarea>
                 </div>
                 <div className="center">
-                    <SubmitButton />
+                    <SubmitButton text="Envoyer le formulaire"/>
                 </div>
             </form>
         </div>

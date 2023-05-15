@@ -1,10 +1,10 @@
 import React from 'react'
 import './SubmitButton.scss'
 
-function SubmitButton() {
+function SubmitButton({ text, onClick}) {
   return (
-    <button className="SubmitButton">
-        Envoyer
+    <button className="submit-button" onClick={onClick}>
+      {text}
     </button>
   )
 }
