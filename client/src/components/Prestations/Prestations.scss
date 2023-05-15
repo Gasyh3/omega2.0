@@ -1,1 +1,50 @@
 @import "../../main.scss";
+
+
+.prestations {
+    border: 1px solid #5fe;
+    height: 100vh;
+    margin-top: 5%;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        padding: 5%;
+    }
+
+    &__cases {
+        border: 1px solid #ccc;
+        height: 40vh;
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .prestations {
+        height: 100%;
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            padding: 5%;
+        }
+
+        &__cases {
+            height: 30vh;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .prestations {
+        height: 100%;
+        &__container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            padding: 5%;
+        }
+    }
+}
+  

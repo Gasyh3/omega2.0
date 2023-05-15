@@ -24,6 +24,7 @@
     }
 
     &__label {
+        width: 40%;
         color: #626060;
         font-size: 1.1em;
         margin: 1% 0;
@@ -153,6 +154,11 @@ form {
 }
 
 @media screen and (max-width: 767px) {
+    .form {
+        &__label {
+            width: 100%;
+        }
+    }
 
     .tooltip .top-first {
         top: -100px;
