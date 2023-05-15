@@ -1,11 +1,11 @@
 import React from 'react'
 import './Contact.scss'
-import FBLogo from "../Logo/Facebook"
-import TikTokLogo from "../Logo/TikTok"
-import InstaLogo from "../Logo/Instagram"
-import WhatLogo from "../Logo/Whatsapp"
-import Youtube from '../Logo/Youtube'
-import FormContact from '../FormContact/FormContact'
+import FBLogo from "../../components/Logo/Facebook"
+import TikTokLogo from "../../components/Logo/TikTok"
+import InstaLogo from "../../components/Logo/Instagram"
+import WhatLogo from "../../components/Logo/Whatsapp"
+import Youtube from '../../components/Logo/Youtube'
+import FormContact from '../../components/FormContact/FormContact'
 
 function Contact() {
   return (

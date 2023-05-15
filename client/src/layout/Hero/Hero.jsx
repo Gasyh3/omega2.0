@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.scss'
 import MainLogo from '../../assets/img/LOGO-FINAL.png'
-import ArrowDown from "../ArrowDown/ArrowDown"
+import ArrowDown from "../../components/ArrowDown/ArrowDown"
 
 function Hero() {
   return (
