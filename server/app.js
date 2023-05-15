@@ -14,6 +14,8 @@ const marqueRoute = require("./routes/marque-route");
 const portfolioRoute = require("./routes/portfolio-route");
 const livredorRoute = require("./routes/livredor-route");
 const postRoute = require("./routes/post-route");
+const collectionponRoute = require("./routes/collectionpon-route");
+const tatouageRoute = require("./routes/tatouage-route");
 
 app.use(cors());
 app.use(express.json());
@@ -31,6 +33,8 @@ app.use("/api/marque", marqueRoute);
 app.use("/api/portfolio", portfolioRoute);
 app.use("/api/livredor", livredorRoute);
 app.use("/api/post", postRoute);
+app.use("/api/collectionpon", collectionponRoute);
+app.use("/api/tatouage", tatouageRoute);
 
 database.sync().then(() => console.log("database is ready to sync"));
 
