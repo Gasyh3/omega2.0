@@ -19,3 +19,13 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .footer {
+        height: 40vh;
+    }
+
+    .footer__right {
+        flex-direction: column;
+    }
+}
+

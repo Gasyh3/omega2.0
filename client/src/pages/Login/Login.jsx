@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+
 import './Login.scss';
 
 const Login = () => {
@@ -27,8 +30,12 @@ const Login = () => {
 
   return (
     <div className='form'>
+        <button className='back__btn goudy' onClick={() => navigate('/main')}>
+            <FontAwesomeIcon icon={faChevronLeft} className='btn__icon' />
+        Retour</button>
         <form>
-            <h2 className='login__title'>Connexion Admin</h2>
+            <h2 className='login__title'>Salut Estreliah !</h2>
+            <p className='login__text'>Connecte-toi pour accéder à ton espace personnel</p>
             <div className='login__input'>
                 <label htmlFor='email' className='form__label goudy'>Email</label>
                 <input
@@ -49,7 +56,9 @@ const Login = () => {
                     className='form__input goudy'
                 />
             </div>
+            <div className="center">
             <SubmitButton text="Se connecter" onClick={handleSubmit}/>
+            </div>
         </form>
     </div>
   )

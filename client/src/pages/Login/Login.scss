@@ -1,14 +1,29 @@
+@import "../../main.scss";
+
 .login__title {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
+.login__text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
 .login__input {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
     margin-bottom: 1.5rem;
+}
 
+.back__btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: $color-primary;
+    background: none;
+    border: none;
+    cursor: pointer;
 }

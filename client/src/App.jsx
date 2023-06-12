@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 import './main.scss'
@@ -20,7 +20,7 @@ function App() {
       <div className="app">
         <Routes>
           <Route path="/main" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/dvsdfqscoc2qxq7_login_eevzvd23Gvee2" element={<Login />} />
           <Route path="/main#about" element={<About />} />
           <Route path="/main#hero" element={<Hero />} />
           <Route path="/main#contact" element={<Contact />} />
