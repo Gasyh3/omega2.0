@@ -3,7 +3,7 @@ import './Prestations.scss'
 
 function Prestations() {
   return (
-    <div className="prestations">
+    <div className="prestations" id="prestation">
       <div className="prestations__container">
         <a href="#" className="prestations__cases">Mariage</a>
         <a href="#" className="prestations__cases">Maquillage</a>

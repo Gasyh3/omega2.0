@@ -18,7 +18,8 @@ const Login = () => {
         try {
             const response = await axios.post('http://localhost:5678/api/user/login', user);
             localStorage.setItem('token', response.data.token);
-            navigate('/');
+            navigate('/main');
+            console.log(response.data.token);
         } catch (error) {
             console.error(error);
         }
